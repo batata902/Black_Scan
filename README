@@ -1,0 +1,10 @@
+Uso: python3 black_scan.py [url] [--one-link/--get-all] [--sqli/--xss/--sqli-xss]
+                        Etapas:
+                        {Especificando quantos alvos}
+                        --one-link : Diz ao programa para escanear apenas o link fornecido
+                        --get-all : Diz ao programa para escanear o link dado e todos os que estiverem dentro dele
+
+                        {Modo}
+                        --sqli : Busca apenas por vulnerabilidade de SQL Injection na/nas url(s) alvo
+                        --xss : Busca apenas por vulnerabilidade de XSS (Cross-Site-Scripting) na/nas url(s) alvo
+                        --sqli-xss : Busca por SQL Injection e por XSS na/nas url alvo
