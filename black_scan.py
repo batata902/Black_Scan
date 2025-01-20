@@ -53,10 +53,10 @@ def sqli_scan(list, listaver=True):
 
 def xss_scan(list, listaver=True):
 	if listaver is False:
-		url = limpa(link)
+		url = limpa(list)
 		response = requests.get(url + '<script> alert("pirocadesabao") </script>')
 		if 'pirocadesabao' in response.text:
-			print (f'\033[32mPossivel falha XSS em -->\033[m {link}')
+			print (f'\033[32mPossivel falha XSS em -->\033[m {list}')
 		else:
 			pass
 	if listaver:
